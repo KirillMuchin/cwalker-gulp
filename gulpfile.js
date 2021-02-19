@@ -34,7 +34,8 @@ function styles() {
 function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
-        'app/js/main.js'
+        'app/js/main.js',
+        'node_modules/vide/dist/jquery.vide.js'
     ])
     .pipe(concat('main.min.js'))
     .pipe(uglify())

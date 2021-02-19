@@ -1,9 +1,93 @@
 @import "vars";
 @import "libs";
 @import "fonts";
+@import "global";
+header {
+  border-bottom: 1px solid #01498F;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 9999;
+}
+.header__inner {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    height: 80px;
 
+    .menu {
+        margin: auto 0;
+        margin-right: 70px;
+        .menu__item {
+            padding: 9px 25px;
+        }
+    }
 
+    .logo {
+        font-size: 48px;
+        line-height: 58px;
+        margin: auto 0;
+    }
+    .menu__list * {
+        display: inline;
+    }
+    .dropdown__menu {
+        display: none;
+    }
+    
+}
+.main__info{
+    background-color:  rgba(0, 0, 0, 0.4);
+}
+.main__info-inner {
+    margin-top: 80px;
 
+    color: white;
+}
+.main__first-text {
+    margin-left: 105px;
+}
+.main__first-header {
+    @extend %h1-header;
+    padding-top: 20vh;
+
+}
+.main__first-info {
+    font-size: 36px;
+    line-height: 40px;
+    max-width: 710px;
+    margin-top: 30px;
+}
+.main__first-btn {
+    color: white;
+    text-align: center;
+    
+
+}
+.main-link{
+    max-width: 326px;
+}
+.main__first-list {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.main_list-item {
+    display: inline-flex;
+    margin: 0 35px;
+}
+.main__list-img {
+    margin-right: 10px;
+}
+.main__list-text {
+    font-size: 24px;
+}
+.main__arrow {
+    text-align: center;
+    margin-top: 10px;
+}
 
 
 @import "media";

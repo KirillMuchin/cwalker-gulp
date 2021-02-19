@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,42 +9,92 @@
     <title>CableWalker</title>
     <link rel="shortcut icon" href="/img/favicon.svg" type="image/x-icon">
 </head>
+
 <body>
-    <div class="main__video" data-vide-bg="../video/mainVideo"
-        data-vide-options="loop :true, position: 0% -0%, muted: true,resizing: true">
-        <header class="header">
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo">CableWalker</a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__list-link" href="index.html">Главная</a></li>
+                        <li class="menu__item down"><a class="menu__list-link-dropdown " href="services.html">Услуги<img
+                                    src="/img/arrow.svg" alt=""></a>
+                            <ul class="dropdown__menu">
+                                <li class="dropdown__item">
+                                    <a href="services.html" class="dropdown__item">Экспрес-диагностика</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="complex-services.html" class="dropdown__item">Комплексная
+                                        диагностика</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="local-repair.html" class="dropdown__item">Ремонт и обслуживание</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"><a class="menu__list-link" href="tech1.html">Технологии</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="portfolio.html">Портфолио</a></li>
+                        <li class="menu__item"><a class="menu__list-link" href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+    <section class="main__info">
+        <div class="main__video" data-vide-bg="video/mainVideo"
+            data-vide-options="loop :true, position: 0% 0%, muted: true,resizing: true">
             <div class="container">
-                <div class="header__inner">
-                    <img src="/img/menu-tel.svg" alt="" class="menu__tel tel">
-                    <a href="index.html" class="logo">CableWalker</a>
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__item"><a class="menu__list-link" href="index.html">Главная</a></li>
-                            <li class="menu__item down"><a class="menu__list-link-dropdown " href="services.html">Услуги<img
-                                        src="/img/arrow.svg" alt=""></a>
-                                <ul class="dropdown__menu">
-                                    <li class="dropdown__item">
-                                        <a href="services.html" class="dropdown__item">Экспрес-диагностика</a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a href="complex-services.html" class="dropdown__item">Комплексная
-                                            диагностика</a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                        <a href="local-repair.html" class="dropdown__item">Ремонт и обслуживание</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu__item"><a class="menu__list-link" href="tech1.html">Технологии</a></li>
-                            <li class="menu__item"><a class="menu__list-link" href="portfolio.html">Портфолио</a></li>
-                            <li class="menu__item"><a class="menu__list-link" href="contacts.html">Контакты</a></li>
-                            <li class="menu__item" id="rework"><a class="menu__list-link " href="#">3D</a></li>
-                        </ul>
-                    </nav>
-    
+                <div class="main__info-inner">
+                    <div class="main__first-text">
+                        <div class="main__first-header">
+                            <h1>Канатоход</h1>
+                        </div>
+                        <div class="main__first-info">Инновационный цифровой роботизированный инструмент для мониторинга
+                            и обслуживания линий электропередачь под напряжением
+                            в режиме реального времени, повышающий эффективность работы электрических сетей.</div>
+
+                        <div class="btn">
+                            <a href="" class="main-link">
+                                <div class="main__first-btn ">
+                                    Подробнее про Канатоход...
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="main__first-list">
+                        <div class="main_list-item">
+                            <img src="img/tech-icon.svg" alt="" class="main__list-img">
+                            <p class="main__list-text">Технологии</p>
+                        </div>
+                        <div class="main_list-item">
+                            <img src="img/customs-icon.svg" alt="" class="main__list-img">
+                            <p class="main__list-text">Услуги</p>
+                        </div>
+                        <div class="main_list-item">
+                            <img src="img/partners-icon.svg" alt="" class="main__list-img">
+                            <p class="main__list-text">Клиенты</p>
+                        </div>
+                        <div class="main_list-item">
+                            <img src="img/contact-icon.svg" alt="" class="main__list-img">
+                            <p class="main__list-text">Связь с нами</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </header>
+            <div class="main__arrow">
+                <a href="" class="main__arrow-link">
+                    <img src="img/down-arrow 1.svg" alt="" class="main__arrow">
+                </a>
+            </div>
+        </div>
+    </section>
+
+
     <script src="js/main.min.js"></script>
 </body>
+
 </html>
